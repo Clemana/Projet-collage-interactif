@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Collage Interactif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <button onclick="addCircle()">Ajouter un cercle</button>
+        <button onclick="addRectangle()">Ajouter un rectangle</button>
+        <button onclick="addText()">Ajouter du texte</button>
+        <input type="color" id="colorPicker" onchange="changeColor()" value="#ff0000" />
+        <input type="text" id="textEditor" placeholder="Modifier le texte" oninput="changeText()" />
+        <button onclick="clearCanvas()">Effacer le canvas</button>
+        <button onclick="deleteSelectedObject()">Supprimer l'objet</button>
+
+    </div>
+    <canvas id="collageCanvas" width="800" height="600"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
